@@ -1,0 +1,6 @@
+services:
+    snoob_mailer.mailer.abstract:
+        class: "Snoob\Component\Mailer\TemplateMailer"
+        abstract: true
+        arguments:
+            - "@snoob_mailer.twig.content.generator"

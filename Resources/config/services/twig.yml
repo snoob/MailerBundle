@@ -1,0 +1,12 @@
+services:
+    nuxia_mailer.twig.content.generator:
+        class: "Snoob\Component\Mailer\Twig\TwigContentGenerator"
+        public: false
+        arguments:
+            - "@twig"
+
+    nuxia_mailer.twig.mailer:
+        parent: "snoob_mailer.mailer.abstract"
+        public: false
+        arguments:
+            - "@nuxia_mailer.twig.content.generator"
