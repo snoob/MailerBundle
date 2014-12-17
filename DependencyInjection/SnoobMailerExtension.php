@@ -18,7 +18,7 @@ class NuxiaMailerExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ .'/../Resources/config'));
-        $container->setParameter('mailer.parameters', $config);
+        $container->setParameter('snoob_mailer.parameters', $config);
         if (in_array('twig', $container->getParameter('templating.engines'))) {
             $loader->load('services/twig.yml');
         }

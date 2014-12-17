@@ -11,7 +11,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Snoob\\Bundle\\Mailer\\": ""}
+        "psr-4": { "Snoob\\Bundle\\MailerBundle\\": ""}
     },
     "require": {
         "php": ">=5.4",

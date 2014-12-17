@@ -8,5 +8,5 @@ services:
     nuxia_mailer.twig.mailer:
         parent: "snoob_mailer.mailer.abstract"
         public: false
-        arguments:
-            - "@nuxia_mailer.twig.content.generator"
+        calls:
+            - [ "setContentGenerator", [ "@nuxia_mailer.twig.content.generator" ] ]
