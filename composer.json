@@ -15,7 +15,7 @@
     },
     "require": {
         "php": ">=5.4",
-        "snoob/mailer": "dev-master",
+        "snoob/mailer": "~1.0",
         "symfony/symfony": "~2.3"
     },
     "extra": {
