@@ -17,5 +17,10 @@
         "php": ">=5.4",
         "snoob/mailer": "dev-master",
         "symfony/symfony": "~2.3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
